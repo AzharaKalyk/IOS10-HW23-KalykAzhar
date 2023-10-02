@@ -11,6 +11,12 @@
 		3B7097742AC88357008F685C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7097732AC88357008F685C /* ContentView.swift */; };
 		3B7097762AC88358008F685C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7097752AC88358008F685C /* Assets.xcassets */; };
 		3B7097792AC88358008F685C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7097782AC88358008F685C /* Preview Assets.xcassets */; };
+		3B7097802AC88BC1008F685C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70977F2AC88BC1008F685C /* Model.swift */; };
+		3B7097862AC88DF2008F685C /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7097852AC88DF2008F685C /* MediaLibrary.swift */; };
+		3B70978A2AC88E78008F685C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7097892AC88E78008F685C /* ListView.swift */; };
+		3B70978C2AC88EBC008F685C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70978B2AC88EBC008F685C /* TabBarView.swift */; };
+		3B70978E2AC88EFE008F685C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70978D2AC88EFE008F685C /* PlayerView.swift */; };
+		3B7097902AC89641008F685C /* TextForMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70978F2AC89641008F685C /* TextForMedia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		3B7097732AC88357008F685C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B7097752AC88358008F685C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7097782AC88358008F685C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B70977F2AC88BC1008F685C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3B7097852AC88DF2008F685C /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
+		3B7097892AC88E78008F685C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		3B70978B2AC88EBC008F685C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		3B70978D2AC88EFE008F685C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3B70978F2AC89641008F685C /* TextForMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForMedia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				3B7097712AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift */,
+				3B70977F2AC88BC1008F685C /* Model.swift */,
 				3B7097732AC88357008F685C /* ContentView.swift */,
+				3B7097852AC88DF2008F685C /* MediaLibrary.swift */,
+				3B70978F2AC89641008F685C /* TextForMedia.swift */,
+				3B7097892AC88E78008F685C /* ListView.swift */,
+				3B70978B2AC88EBC008F685C /* TabBarView.swift */,
+				3B70978D2AC88EFE008F685C /* PlayerView.swift */,
 				3B7097752AC88358008F685C /* Assets.xcassets */,
 				3B7097772AC88358008F685C /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7097802AC88BC1008F685C /* Model.swift in Sources */,
+				3B7097902AC89641008F685C /* TextForMedia.swift in Sources */,
+				3B70978C2AC88EBC008F685C /* TabBarView.swift in Sources */,
 				3B7097742AC88357008F685C /* ContentView.swift in Sources */,
+				3B70978E2AC88EFE008F685C /* PlayerView.swift in Sources */,
+				3B70978A2AC88E78008F685C /* ListView.swift in Sources */,
+				3B7097862AC88DF2008F685C /* MediaLibrary.swift in Sources */,
 				3B7097722AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
