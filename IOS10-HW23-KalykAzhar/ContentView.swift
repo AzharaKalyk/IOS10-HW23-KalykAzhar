@@ -1,21 +1,11 @@
-//
-//  ContentView.swift
-//  IOS10-HW23-KalykAzhar
-//
-//  Created by Azhar Kalyk on 30.09.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            TabBarView()
+            PlayerView()
         }
-        .padding()
     }
 }
 
@@ -24,3 +14,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
