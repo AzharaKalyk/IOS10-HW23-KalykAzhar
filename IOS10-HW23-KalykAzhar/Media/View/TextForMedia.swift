@@ -6,7 +6,7 @@ struct TextForMedia: View {
             VStack {
                 Text("Ищете свою музыку?")
                     .fontWeight(.heavy)
-                    
+                
                 Text("Здесь появится купленная Вами в iTunes Store музыка.")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
