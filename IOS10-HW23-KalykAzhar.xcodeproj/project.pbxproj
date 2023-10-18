@@ -63,14 +63,8 @@
 		3B7097702AC88357008F685C /* IOS10-HW23-KalykAzhar */ = {
 			isa = PBXGroup;
 			children = (
-				3B7097712AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift */,
-				3B70977F2AC88BC1008F685C /* Model.swift */,
-				3B7097732AC88357008F685C /* ContentView.swift */,
-				3B7097852AC88DF2008F685C /* MediaLibrary.swift */,
-				3B70978F2AC89641008F685C /* TextForMedia.swift */,
-				3B7097892AC88E78008F685C /* ListView.swift */,
-				3B70978B2AC88EBC008F685C /* TabBarView.swift */,
-				3B70978D2AC88EFE008F685C /* PlayerView.swift */,
+				3B9E76C22ADA8A8A005BB147 /* ContentView */,
+				3B9E76C52ADA8C9A005BB147 /* Media */,
 				3B7097752AC88358008F685C /* Assets.xcassets */,
 				3B7097772AC88358008F685C /* Preview Content */,
 			);
@@ -83,6 +77,60 @@
 				3B7097782AC88358008F685C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B9E76C22ADA8A8A005BB147 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				3B7097712AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift */,
+				3B7097732AC88357008F685C /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		3B9E76C32ADA8AB4005BB147 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				3B70978B2AC88EBC008F685C /* TabBarView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		3B9E76C42ADA8C0C005BB147 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				3B70978D2AC88EFE008F685C /* PlayerView.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		3B9E76C52ADA8C9A005BB147 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				3B9E76C72ADA8D01005BB147 /* Model */,
+				3B9E76C32ADA8AB4005BB147 /* TabBarView */,
+				3B9E76C42ADA8C0C005BB147 /* PlayerView */,
+				3B9E76C62ADA8CEE005BB147 /* View */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		3B9E76C62ADA8CEE005BB147 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7097852AC88DF2008F685C /* MediaLibrary.swift */,
+				3B70978F2AC89641008F685C /* TextForMedia.swift */,
+				3B7097892AC88E78008F685C /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B9E76C72ADA8D01005BB147 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B70977F2AC88BC1008F685C /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
