@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B64FB252AE2D3EA00C69FC3 /* ModelRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB242AE2D3EA00C69FC3 /* ModelRadio.swift */; };
+		3B64FB272AE2D5FB00C69FC3 /* ModelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB262AE2D5FB00C69FC3 /* ModelSection.swift */; };
+		3B64FB2A2AE2DC7700C69FC3 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB292AE2DC7700C69FC3 /* RadioView.swift */; };
+		3B64FB2C2AE2DDB400C69FC3 /* RadioSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB2B2AE2DDB400C69FC3 /* RadioSection.swift */; };
+		3B64FB2E2AE2DE5A00C69FC3 /* ContentViewForRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB2D2AE2DE5A00C69FC3 /* ContentViewForRadio.swift */; };
 		3B7097722AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7097712AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift */; };
 		3B7097742AC88357008F685C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7097732AC88357008F685C /* ContentView.swift */; };
 		3B7097762AC88358008F685C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7097752AC88358008F685C /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B64FB242AE2D3EA00C69FC3 /* ModelRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRadio.swift; sourceTree = "<group>"; };
+		3B64FB262AE2D5FB00C69FC3 /* ModelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSection.swift; sourceTree = "<group>"; };
+		3B64FB292AE2DC7700C69FC3 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		3B64FB2B2AE2DDB400C69FC3 /* RadioSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSection.swift; sourceTree = "<group>"; };
+		3B64FB2D2AE2DE5A00C69FC3 /* ContentViewForRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewForRadio.swift; sourceTree = "<group>"; };
 		3B70976E2AC88357008F685C /* IOS10-HW23-KalykAzhar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS10-HW23-KalykAzhar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7097712AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS10_HW23_KalykAzharApp.swift; sourceTree = "<group>"; };
 		3B7097732AC88357008F685C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B64FB212AE2D25800C69FC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B64FB222AE2D2B300C69FC3 /* RadioView */,
+				3B9E76C52ADA8C9A005BB147 /* MediaView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B64FB222AE2D2B300C69FC3 /* RadioView */ = {
+			isa = PBXGroup;
+			children = (
+				3B64FB232AE2D3C600C69FC3 /* Model */,
+				3B64FB282AE2DC2400C69FC3 /* View */,
+			);
+			path = RadioView;
+			sourceTree = "<group>";
+		};
+		3B64FB232AE2D3C600C69FC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B64FB242AE2D3EA00C69FC3 /* ModelRadio.swift */,
+				3B64FB262AE2D5FB00C69FC3 /* ModelSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B64FB282AE2DC2400C69FC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B64FB292AE2DC7700C69FC3 /* RadioView.swift */,
+				3B64FB2B2AE2DDB400C69FC3 /* RadioSection.swift */,
+				3B64FB2D2AE2DE5A00C69FC3 /* ContentViewForRadio.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3B7097652AC88357008F685C = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				3B9E76C22ADA8A8A005BB147 /* ContentView */,
-				3B9E76C52ADA8C9A005BB147 /* Media */,
+				3B64FB212AE2D25800C69FC3 /* Views */,
+				3B9E76C42ADA8C0C005BB147 /* PlayerView */,
 				3B7097752AC88358008F685C /* Assets.xcassets */,
 				3B7097772AC88358008F685C /* Preview Content */,
 			);
@@ -104,23 +152,22 @@
 			path = PlayerView;
 			sourceTree = "<group>";
 		};
-		3B9E76C52ADA8C9A005BB147 /* Media */ = {
+		3B9E76C52ADA8C9A005BB147 /* MediaView */ = {
 			isa = PBXGroup;
 			children = (
 				3B9E76C72ADA8D01005BB147 /* Model */,
-				3B9E76C32ADA8AB4005BB147 /* TabBarView */,
-				3B9E76C42ADA8C0C005BB147 /* PlayerView */,
 				3B9E76C62ADA8CEE005BB147 /* View */,
+				3B9E76C32ADA8AB4005BB147 /* TabBarView */,
 			);
-			path = Media;
+			path = MediaView;
 			sourceTree = "<group>";
 		};
 		3B9E76C62ADA8CEE005BB147 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B7097892AC88E78008F685C /* ListView.swift */,
 				3B7097852AC88DF2008F685C /* MediaLibrary.swift */,
 				3B70978F2AC89641008F685C /* TextForMedia.swift */,
-				3B7097892AC88E78008F685C /* ListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,11 +251,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7097802AC88BC1008F685C /* Model.swift in Sources */,
+				3B64FB2C2AE2DDB400C69FC3 /* RadioSection.swift in Sources */,
 				3B7097902AC89641008F685C /* TextForMedia.swift in Sources */,
+				3B64FB252AE2D3EA00C69FC3 /* ModelRadio.swift in Sources */,
+				3B64FB272AE2D5FB00C69FC3 /* ModelSection.swift in Sources */,
 				3B70978C2AC88EBC008F685C /* TabBarView.swift in Sources */,
+				3B64FB2A2AE2DC7700C69FC3 /* RadioView.swift in Sources */,
 				3B7097742AC88357008F685C /* ContentView.swift in Sources */,
 				3B70978E2AC88EFE008F685C /* PlayerView.swift in Sources */,
 				3B70978A2AC88E78008F685C /* ListView.swift in Sources */,
+				3B64FB2E2AE2DE5A00C69FC3 /* ContentViewForRadio.swift in Sources */,
 				3B7097862AC88DF2008F685C /* MediaLibrary.swift in Sources */,
 				3B7097722AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift in Sources */,
 			);
