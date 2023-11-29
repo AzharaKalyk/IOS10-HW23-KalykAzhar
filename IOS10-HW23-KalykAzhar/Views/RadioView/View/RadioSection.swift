@@ -19,13 +19,13 @@ struct RadioSection: View {
                                 .cornerRadius(10)
                             VStack(alignment: .leading) {
                                 Text(model.title)
-                                Text(model.footer)
+                                Text(model.albumReleaseYear)
                                     .foregroundColor(.secondary)
                             }
                         }
                         Divider()
                     }
-            }
+                }
         }
     }
 }
