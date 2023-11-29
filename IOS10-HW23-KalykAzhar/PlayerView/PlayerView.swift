@@ -1,33 +1,50 @@
 import SwiftUI
 
 struct PlayerView: View {
+    
+    @State var showModalView = false
+    
     var body: some View {
-        VStack {
-            Spacer()
+        HStack {
             HStack {
-                Image("joji")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 52, height: 52)
-                    .shadow(radius: 5)
-                Text("Joji - Demons")
+                Button {
+                    showModalView = true
+                } label: {
+                    Image("joji")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                        .shadow(radius: 5)
+                }
+                
+                Button {
+                    showModalView = true
+                } label: {
+                    Text("Joji - Demons")
+                        .foregroundColor(.black)
+                }
                 Spacer()
-                Button {
-                } label: {
-                    Image(systemName: ImagesForPlayerView.play)
-                        .font(.title2)
-                        .foregroundColor(Color.black)
-                }
-                Button {
-                } label: {
-                    Image(systemName: ImagesForPlayerView.forward)
-                        .font(.title2)
-                        .foregroundColor(Color.black)
-                }
             }
-            .padding()
-            .padding(.bottom, 40)
+            .popover(isPresented: $showModalView) {
+                DetailPlayerMusic()
+            }
+            
+            Button {
+            } label: {
+                Image(systemName: ImagesForPlayerView.play)
+                    .font(.title2)
+                    .foregroundColor(Color.black)
+            }
+            Button {
+            } label: {
+                Image(systemName: ImagesForPlayerView.forward)
+                    .font(.title2)
+                    .foregroundColor(Color.black)
+            }
         }
+        .position(x: 180, y: 660)
+        .padding()
+        
     }
 }
 
@@ -41,3 +58,4 @@ enum ImagesForPlayerView {
     static let play = "play.fill"
     static let forward = "forward.fill"
 }
+
