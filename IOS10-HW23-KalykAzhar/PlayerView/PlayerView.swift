@@ -5,48 +5,52 @@ struct PlayerView: View {
     @State var showModalView = false
     
     var body: some View {
-        HStack {
+        VStack {
+            Spacer()
             HStack {
-                Button {
-                    showModalView = true
-                } label: {
-                    Image("joji")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                        .shadow(radius: 5)
+                HStack {
+                    Button {
+                        showModalView = true
+                    } label: {
+                        Image("joji")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50)
+                            .shadow(radius: 5)
+                            .padding([.trailing, .leading], 5)
+                    }
+                    
+                    Button {
+                        showModalView = true
+                    } label: {
+                        Text("Joji - Demons")
+                            .foregroundColor(.black)
+                    }
+                    Spacer()
+                }
+                .popover(isPresented: $showModalView) {
+                    DetailPlayerMusic()
                 }
                 
                 Button {
-                    showModalView = true
                 } label: {
-                    Text("Joji - Demons")
-                        .foregroundColor(.black)
+                    Image(systemName: ImagesForPlayerView.play)
+                        .font(.title2)
+                        .foregroundColor(Color.black)
                 }
-                Spacer()
+                Button {
+                } label: {
+                    Image(systemName: ImagesForPlayerView.forward)
+                        .font(.title2)
+                        .foregroundColor(Color.black)
+                }
             }
-            .popover(isPresented: $showModalView) {
-                DetailPlayerMusic()
-            }
-            
-            Button {
-            } label: {
-                Image(systemName: ImagesForPlayerView.play)
-                    .font(.title2)
-                    .foregroundColor(Color.black)
-            }
-            Button {
-            } label: {
-                Image(systemName: ImagesForPlayerView.forward)
-                    .font(.title2)
-                    .foregroundColor(Color.black)
-            }
+            .padding()
         }
-        .position(x: 180, y: 660)
-        .padding()
-        
+        .padding(.bottom, 30) 
     }
 }
+
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
