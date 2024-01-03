@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5CE1F82B4461FC005733F5 /* UIKitSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CE1F72B4461FC005733F5 /* UIKitSearchView.swift */; };
+		3B5CE1FA2B44628C005733F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CE1F92B44628C005733F5 /* SearchViewController.swift */; };
+		3B5CE1FC2B4462CD005733F5 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CE1FB2B4462CD005733F5 /* SearchCollectionViewCell.swift */; };
+		3B5CE1FE2B4462FD005733F5 /* SearchCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CE1FD2B4462FD005733F5 /* SearchCellHeader.swift */; };
+		3B5CE2002B44660A005733F5 /* ExtensionUIKitSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CE1FF2B44660A005733F5 /* ExtensionUIKitSearch.swift */; };
+		3B5CE2032B45B4F0005733F5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B5CE2022B45B4F0005733F5 /* SnapKit */; };
 		3B64FB252AE2D3EA00C69FC3 /* ModelRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB242AE2D3EA00C69FC3 /* ModelRadio.swift */; };
 		3B64FB272AE2D5FB00C69FC3 /* ModelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB262AE2D5FB00C69FC3 /* ModelSection.swift */; };
 		3B64FB2A2AE2DC7700C69FC3 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64FB292AE2DC7700C69FC3 /* RadioView.swift */; };
@@ -35,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5CE1F72B4461FC005733F5 /* UIKitSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitSearchView.swift; sourceTree = "<group>"; };
+		3B5CE1F92B44628C005733F5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3B5CE1FB2B4462CD005733F5 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B5CE1FD2B4462FD005733F5 /* SearchCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellHeader.swift; sourceTree = "<group>"; };
+		3B5CE1FF2B44660A005733F5 /* ExtensionUIKitSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIKitSearch.swift; sourceTree = "<group>"; };
 		3B64FB242AE2D3EA00C69FC3 /* ModelRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRadio.swift; sourceTree = "<group>"; };
 		3B64FB262AE2D5FB00C69FC3 /* ModelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSection.swift; sourceTree = "<group>"; };
 		3B64FB292AE2DC7700C69FC3 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
@@ -68,17 +79,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5CE2032B45B4F0005733F5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5CE1F62B446187005733F5 /* SearchViewUIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchViewUIKit;
+			sourceTree = "<group>";
+		};
 		3B64FB212AE2D25800C69FC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3B9E76C52ADA8C9A005BB147 /* MediaView */,
 				3B64FB222AE2D2B300C69FC3 /* RadioView */,
+				3B5CE1F62B446187005733F5 /* SearchViewUIKit */,
+				3B5CE1F72B4461FC005733F5 /* UIKitSearchView.swift */,
+				3B5CE1F92B44628C005733F5 /* SearchViewController.swift */,
+				3B5CE1FF2B44660A005733F5 /* ExtensionUIKitSearch.swift */,
+				3B5CE1FB2B4462CD005733F5 /* SearchCollectionViewCell.swift */,
+				3B5CE1FD2B4462FD005733F5 /* SearchCellHeader.swift */,
 				3B64FB6B2AE834BB00C69FC3 /* SearchView */,
 			);
 			path = Views;
@@ -266,6 +291,9 @@
 			dependencies = (
 			);
 			name = "IOS10-HW23-KalykAzhar";
+			packageProductDependencies = (
+				3B5CE2022B45B4F0005733F5 /* SnapKit */,
+			);
 			productName = "IOS10-HW23-KalykAzhar";
 			productReference = 3B70976E2AC88357008F685C /* IOS10-HW23-KalykAzhar.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +322,9 @@
 				Base,
 			);
 			mainGroup = 3B7097652AC88357008F685C;
+			packageReferences = (
+				3B5CE2012B45B4F0005733F5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3B70976F2AC88357008F685C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,6 +353,7 @@
 			files = (
 				3B64FB6F2AE8366700C69FC3 /* ModelSearch.swift in Sources */,
 				3B7097802AC88BC1008F685C /* Model.swift in Sources */,
+				3B5CE2002B44660A005733F5 /* ExtensionUIKitSearch.swift in Sources */,
 				3B64FB2C2AE2DDB400C69FC3 /* RadioSection.swift in Sources */,
 				3BF3AC992B14FFCD001F7E7C /* DetailPlayerMusic.swift in Sources */,
 				3B7097902AC89641008F685C /* TextForMedia.swift in Sources */,
@@ -335,14 +367,18 @@
 				3B64FB7A2AE9815300C69FC3 /* DetailCategoryView.swift in Sources */,
 				3B64FB742AE9807400C69FC3 /* TextFieldView.swift in Sources */,
 				3B64FB6D2AE8354300C69FC3 /* SearchView.swift in Sources */,
+				3B5CE1FA2B44628C005733F5 /* SearchViewController.swift in Sources */,
 				3B64FB722AE97A9100C69FC3 /* ModelSearchDetail.swift in Sources */,
 				3B64FB7C2AE982C700C69FC3 /* PlayListView.swift in Sources */,
 				3B64FB7E2AE982E800C69FC3 /* CategoryView.swift in Sources */,
 				3B64FB2E2AE2DE5A00C69FC3 /* ContentViewForRadio.swift in Sources */,
 				3B64FB762AE980C000C69FC3 /* VerticalScrollView.swift in Sources */,
 				3B64FB782AE9810400C69FC3 /* RowVerticalView.swift in Sources */,
+				3B5CE1FC2B4462CD005733F5 /* SearchCollectionViewCell.swift in Sources */,
 				3B7097862AC88DF2008F685C /* MediaLibrary.swift in Sources */,
+				3B5CE1FE2B4462FD005733F5 /* SearchCellHeader.swift in Sources */,
 				3B7097722AC88357008F685C /* IOS10_HW23_KalykAzharApp.swift in Sources */,
+				3B5CE1F82B4461FC005733F5 /* UIKitSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +579,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B5CE2012B45B4F0005733F5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B5CE2022B45B4F0005733F5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B5CE2012B45B4F0005733F5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B7097662AC88357008F685C /* Project object */;
 }
