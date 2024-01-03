@@ -69,6 +69,7 @@ struct DetailPlayerMusic: View {
                 }
                 .padding()
                 .padding(.bottom, 20)
+                
                 HStack { // Сама перемотка
                     Button {
                     } label: {
@@ -78,6 +79,7 @@ struct DetailPlayerMusic: View {
                             .frame(width: 50, height: 30)
                             .foregroundColor(.white)
                     }
+                    .padding(.trailing, 50)
                     
                     Button {
                     } label: {
@@ -85,10 +87,9 @@ struct DetailPlayerMusic: View {
                             .resizable()
                             .scaledToFill()
                             .frame(width: 40, height: 40)
-                            .padding(.leading, 60)
-                            .padding(.trailing, 60)
                             .foregroundColor(.white)
                     }
+                    .padding(.trailing, 50)
                     
                     Button {
                     } label: {
@@ -100,19 +101,22 @@ struct DetailPlayerMusic: View {
                     }
                 }
                 .padding(.bottom, 20)
+                
                 HStack {
                     Button {} label: {
                         Image(systemName: "quote.bubble")
                             .resizable()
                             .frame(width: 25, height: 25)
                     }
+                    .padding(.trailing, 50)
+                    
                     Button {} label: {
                         Image(systemName: "airplayaudio")
                             .resizable()
                             .frame(width: 25, height: 25)
-                            .padding(.leading, 60)
-                            .padding(.trailing, 60)
                     }
+                    .padding(.trailing, 50)
+                    
                     Button {} label: {
                         Image(systemName: "shuffle")
                             .resizable()

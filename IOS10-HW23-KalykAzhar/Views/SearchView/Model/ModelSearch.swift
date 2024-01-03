@@ -15,8 +15,8 @@ struct ModelCategoryList: Identifiable, Hashable {
     }
 }
 
-final class SearchCategoryList {
-    let dataList: [ModelCategoryList] = [ModelCategoryList(image: "One",
+extension ModelCategoryList {
+    static var dataList: [ModelCategoryList] = [ModelCategoryList(image: "One",
                                                title: "Зимняя время"),
                                          ModelCategoryList(image: "Two",
                                                title: "Поп на русском"),
